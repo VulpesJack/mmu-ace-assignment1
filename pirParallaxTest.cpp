@@ -15,12 +15,6 @@ int main() {
   while(1) {
     val = pirPin.read();
     
-    if (val == 0) {
-      pc.printf("Sensor ON\n");
-      wait(1.5f);
-    }
-    else {
-      pc.printf("Sensor is OFF\n");
-    }
+    pc.printf("val = %f\n",val);
   }
 }
