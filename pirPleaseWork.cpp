@@ -1,4 +1,6 @@
 #include "mbed.h"
+
+Serial pc(UBSTX, USBRX);
  
 InterruptIn motion(p11);
  
@@ -18,7 +20,7 @@ int main(void)
         if(motion_detected) {
             cnt++;
             motion_detected = 0;
-            printf("Hello! I've detected %d times since reset\n", cnt);
+            pc.printf("Hello! I've detected %d times since reset\n", cnt);
         }
     }
 }
