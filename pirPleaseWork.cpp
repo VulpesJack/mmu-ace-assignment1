@@ -1,6 +1,6 @@
 #include "mbed.h"
 
-Serial pc(UBSTX, USBRX);
+Serial pc(USBTX, USBRX);
  
 InterruptIn motion(p11);
  
