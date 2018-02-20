@@ -10,9 +10,7 @@ int main() {
   wait(10);
   pc.printf("Snapshot\n");
   
-  while(1) {
-    int val = pirPin.read();
+  int val = pirPin.read();
     
-    pc.printf("val = %f\n",val);
-  }
+  pc.printf("val = %f\n",val);
 }
