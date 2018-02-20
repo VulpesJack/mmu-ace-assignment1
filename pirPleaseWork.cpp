@@ -13,6 +13,7 @@ void irq_handler(void)
     
 int main(void)
 {
+    pc.printf("Init\n");
     int cnt = 0;
     motion.rise(&irq_handler);
     
