@@ -16,9 +16,7 @@ int main() {
     val = pirPin.read();
     
     if (val == 0) {
-      pc.printf("Sensor ON");
-      pc.printf("Stay Away!\n");
-      
+      pc.printf("Sensor ON\n");
       wait(1.5f);
     }
     else {
