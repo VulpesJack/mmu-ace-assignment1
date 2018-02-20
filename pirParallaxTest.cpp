@@ -5,7 +5,6 @@ Serial pc(USBTX, USBRX);
 DigitalIn pirPin(p11, PullUp);
 
 int val = 0;
-int cnt = 0;
 
 int main() {
   pc.printf("Init NRF\n");
@@ -17,9 +16,7 @@ int main() {
     val = pirPin.read();
     
     if (val == 0) {
-      cnt++;
-      
-      pc.printf("Sensor ON, Detected %i \r\n",cnt);
+      pc.printf("Sensor ON");
       pc.printf("Stay Away!\n");
       
       wait(1.5f);
