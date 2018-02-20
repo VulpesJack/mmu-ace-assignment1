@@ -2,7 +2,7 @@
 
 Serial pc(USBTX, USBRX);
 //DigitalOut led(LED1);
-DigitalIn pirIn(P11);
+DigitalIn pirIn(p11, PullUp);
 
 int val = 0;
 int cnt = 0;
