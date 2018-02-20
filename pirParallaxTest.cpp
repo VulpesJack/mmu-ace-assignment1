@@ -4,8 +4,6 @@ Serial pc(USBTX, USBRX);
 //DigitalOut led(LED1);
 DigitalIn pirPin(p11, PullUp);
 
-int val = 0;
-
 int main() {
   pc.printf("Init NRF\n");
   
@@ -13,7 +11,7 @@ int main() {
   pc.printf("Snapshot\n");
   
   while(1) {
-    val = pirPin.read();
+    int val = pirPin.read();
     
     pc.printf("val = %f\n",val);
   }
