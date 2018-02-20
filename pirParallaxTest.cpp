@@ -20,12 +20,12 @@ int main() {
       cnt++;
       
       pc.printf("Sensor ON, Detected %i \r\n",cnt);
-      pc.printf("Stay Away!");
+      pc.printf("Stay Away!\n");
       
       wait(1.5f);
     }
     else {
-      pc.printf("Sensor is OFF");
+      pc.printf("Sensor is OFF\n");
     }
   }
 }
