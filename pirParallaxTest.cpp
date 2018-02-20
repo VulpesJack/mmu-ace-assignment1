@@ -10,7 +10,7 @@ int cnt = 0;
 int main() {
   pc.printf("Init NRF\n");
   
-  wait(5);
+  wait(10);
   pc.printf("Snapshot\n");
   
   while(1) {
