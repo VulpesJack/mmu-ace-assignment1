@@ -1,5 +1,3 @@
-# mmu-ace-assignment1
-Sharing ARM code
+# Advanced Computer Engineering - Assignment 1 - MMU
+Sharing code for the ACE first assignment, most code will be C++.
 
-## YOU ARE IN MASTER BRANCH - USE NAMED BRANCHES ONLY
-Do not add files to the master branch, use named branch only
