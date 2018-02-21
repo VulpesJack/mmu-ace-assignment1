@@ -9,15 +9,13 @@ int main() {
 	pc.printf("INIT");
 	
 	while(1) {
-		pc.printf("PIR GO");
-		
-		wait(5);
-		
-		if (!alarm) {
-			pirLed = 1;
-		} else {
-			pirLed = 0;
-			pc.printf("ALARM!\n");
-		}
+	    wait(5);
+	    pc.printf("PIR GO");
+	if (!alarm) {
+	    pirLed = 1;
+	} else {
+	    pirLed = 0;
+	    pc.printf("ALARM!\n");
 	}
+    }
 }
