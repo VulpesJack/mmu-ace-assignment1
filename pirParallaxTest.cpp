@@ -11,6 +11,7 @@ int main() {
   pc.printf("Snapshot\n");
   
   int val = pirPin.read();
-    
-  pc.printf("val = %f\n",val);
+  while(1) {
+    pc.printf("val = %f\n",val);
+  }
 }
