@@ -5,7 +5,7 @@ DigitalOut dhtLed(LED1);
 
 Serial pc(USBTX, USBRX);
 
-DHT sensor(p23, DHT11);
+DHT sensor(p23, SEN11301P);
 
 int main() {
 	int err;
