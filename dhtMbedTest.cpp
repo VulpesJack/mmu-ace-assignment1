@@ -17,8 +17,7 @@ int main() {
 		if (err == 0) {
 			pc.printf("Temp = %4.2f C\r\n",sensor.ReadTemperature(CELCIUS));
 			pc.printf("Humidity = %4.2f \r\n",sensor.ReadHumidity());
-		}
-	} else {
+		} else {
 		pc.printf("\r\nErr %i \n",err);
 	}
 	dhtLed = 0;
