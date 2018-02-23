@@ -6,16 +6,17 @@ DigitalOut pirLed(LED1);
 Serial pc(USBTX, USBRX);
 
 int main() {
-	pc.printf("INIT");
+    pc.printf("INIT\n");
 	
-	while(1) {
-	    wait(5);
-	    pc.printf("PIR GO");
-	if (!pirAlarm) {
+    wait(5);
+    pc.printf("PIR GO\n");
+	
+    while(1) {
+        if (!pirAlarm) {
 	    pirLed = 1;
-	} else {
+        } else {
 	    pirLed = 0;
 	    pc.printf("ALARM!\n");
-	}
+        }
     }
 }
