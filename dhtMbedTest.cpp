@@ -9,7 +9,7 @@ DHT sensor(p23, DHT11);
 
 int main() {
 	int err;
-	pc.printf("INIT DHT");
+	pc.printf("INIT DHT\n");
 	wait(1);
 	while(1) {
 		dhtLed = 1;
