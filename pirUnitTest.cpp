@@ -11,7 +11,7 @@ int main() {
 	while(1) {
 	    wait(5);
 	    pc.printf("PIR GO");
-	if (!alarm) {
+	if (!pirAlarm) {
 	    pirLed = 1;
 	} else {
 	    pirLed = 0;
