@@ -12,7 +12,7 @@ int main() {
 	pc.printf("INIT DHT");
 	wait(1);
 	while(1) {
-		dhtLED = 1;
+		dhtLed = 1;
 		err = sensor.readData();
 		if (err == 0) {
 			pc.printf("Temp = %4.2f C\r\n",sensor.ReadTemperature(CELCIUS));
