@@ -11,7 +11,7 @@
  * between the nordic dev kit and an arduino phone.
  *
  * First Created: 26/02/2018
- * Last Revised: 26/02/2018 - Initial Revision
+ * Last Revised: 26/02/2018v2 - Fixed Bugs/Syntax. Compiles in mbed os.
  */
  
 
