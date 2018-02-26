@@ -23,7 +23,7 @@
  */
 
 DigitalIn pirAlarm(p3, PullNone);    			 // PIR input pin
-Analogin ldr(p4);                    			 // LDR input pin
+AnalogIn ldr(p4);                    			 // LDR input pin
 DHT dhtSensor(p11, DHT11);              	     // DHT input pin, defined as per DHT library
 
 /*
@@ -79,10 +79,10 @@ int main() {
 			float Lux = FTC*10.76;    // Gets lux of room
 			
 			if (err == 0) {
-				pc.printf("T=%4.2f\n",dhtSensor.ReadTemperature(CELCIUS));    // Prints temperature in C
-				float tempC = dhtSensor.ReadTemperature(CELCIUS));    // Assigns temp to float var
-				pc.printf("H=%4.2f\n",dhtSensor.ReadHumidity());    // Prints humidity
-				float humid = dhtSensor.ReadHumidity();    // Assigns humidity to float var
+				float tempC = dhtSensor.ReadTemperature(CELCIUS);
+				pc.printf("T=%4.2f\n",tempC);    // Prints temperature in C
+				float humid = dhtSensor.ReadHumidity();
+				pc.printf("H=%4.2f\n",humid);
 				
 				pc.printf("LDRVo=%f\n",Vo);    // Prints LDR voltage
 				pc.printf("LDRPD=%f\n",pd);    // Prints LDR PD
@@ -110,7 +110,7 @@ int main() {
 					heatRelay = 0;    // Turns heating off if conditions aren't met
 				}
 				
-				if (tempC > minTemp) {
+				if (tempC > maxTemp) {
 					pc.printf("MAXTMP. HEATING OFF\n");    // Prints status to serial
 					heatRelay = 0;    // Turns heating off
 				} else {
