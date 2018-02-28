@@ -4,7 +4,7 @@
 MODSERIAL pc(USBTX, USBRX);
 DigitalOut led1(LED1);
 
-#if definted(TARGET_LPC1786)
+#if defined(TARGET_LPC1786)
 MODSERIAL blue (p9, p10);
 #elif defined(TARGET_LPC4330_M4)
 MODSERIAL blue(UART0_TX, UART0_RX);
